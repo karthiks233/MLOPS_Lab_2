@@ -1,0 +1,9 @@
+opencv-python
+ultralytics
+scikit-learn
+numpy
+pandas
+pytest
+ipykernel
+mlflow
+joblib

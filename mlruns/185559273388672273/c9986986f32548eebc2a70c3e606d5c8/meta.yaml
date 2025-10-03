@@ -1,0 +1,14 @@
+artifact_uri: /Users/karthikraja/Documents/MLOPS-2/mlruns/185559273388672273/c9986986f32548eebc2a70c3e606d5c8/artifacts
+end_time: 1759444297306
+entry_point_name: ''
+experiment_id: '185559273388672273'
+lifecycle_stage: active
+run_id: c9986986f32548eebc2a70c3e606d5c8
+run_name: MLOPS_LAB_2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759444297061
+status: 3
+tags: []
+user_id: karthikraja

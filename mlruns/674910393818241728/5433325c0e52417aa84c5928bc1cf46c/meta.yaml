@@ -1,0 +1,14 @@
+artifact_uri: /Users/karthikraja/Documents/MLOPS-2/mlruns/674910393818241728/5433325c0e52417aa84c5928bc1cf46c/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '674910393818241728'
+lifecycle_stage: active
+run_id: 5433325c0e52417aa84c5928bc1cf46c
+run_name: Reuters_Corpus_Volume
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759446791338
+status: 1
+tags: []
+user_id: karthikraja
