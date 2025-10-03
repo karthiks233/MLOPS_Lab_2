@@ -1,5 +1,5 @@
 import pickle, os, json, random
-from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score, accuracy_score
 import joblib, glob, sys
 import argparse
 from sklearn.datasets import make_classification
@@ -68,7 +68,10 @@ if __name__=='__main__':
     y_predict_gbc = model_gbc.predict(X)
     metrics = {"F1_Score_RandomForest":f1_score(y, y_predict_rf),
                "F1_Score_DecisionTree":f1_score(y, y_predict_dt),
-               "F1_Score_GradientBoosting":f1_score(y, y_predict_gbc)}
+               "F1_Score_GradientBoosting":f1_score(y, y_predict_gbc),
+               "Accuracy_RandomForest":accuracy_score(y, y_predict_rf),
+               "Accuracy_DecisionTree":accuracy_score(y, y_predict_dt),
+               "Accuracy_GradientBoosting":accuracy_score(y, y_predict_gbc)}
     
     # Save metrics to a JSON file
 
