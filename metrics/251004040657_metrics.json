@@ -1,0 +1,8 @@
+{
+    "F1_Score_RandomForest": 0.37374658158614404,
+    "F1_Score_DecisionTree": 0.37376460017969454,
+    "F1_Score_GradientBoosting": 0.3781009409751925,
+    "Accuracy_RandomForest": 0.4967032967032967,
+    "Accuracy_DecisionTree": 0.48937728937728936,
+    "Accuracy_GradientBoosting": 0.4673992673992674
+}
