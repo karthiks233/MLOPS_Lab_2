@@ -18,14 +18,14 @@ if __name__ == '__main__':
 
     # Add timestamp argument - From GitHub Actions
 
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("--timestamp", type=str, required=True, help="Timestamp from GitHub Actions")
-    # args = parser.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--timestamp", type=str, required=True, help="Timestamp from GitHub Actions")
+    args = parser.parse_args()
     
     # Access the timestamp
-    # timestamp = args.timestamp
+    timestamp = args.timestamp
 
-    timestamp = datetime.datetime.now().strftime("%y%m%d")
+    # timestamp = datetime.datetime.now().strftime("%y%m%d")
     
     # Use the timestamp in your script
     print(f"Timestamp received from GitHub Actions: {timestamp}")

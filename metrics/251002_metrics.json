@@ -1,5 +1,0 @@
-{
-    "F1_Score_RandomForest": 0.2513781697905182,
-    "F1_Score_DecisionTree": 0.3801980198019802,
-    "F1_Score_GradientBoosting": 0.3951612903225806
-}

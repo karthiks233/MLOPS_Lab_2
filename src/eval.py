@@ -10,14 +10,14 @@ sys.path.insert(0, os.path.abspath('..'))
 if __name__=='__main__':
     # Add timestamp argument - From GitHub Actions
 
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("--timestamp", type=str, required=True, help="Timestamp from GitHub Actions")
-    # args = parser.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--timestamp", type=str, required=True, help="Timestamp from GitHub Actions")
+    args = parser.parse_args()
     
     # Access the timestamp
-    # timestamp = args.timestamp
+    timestamp = args.timestamp
 
-    timestamp = datetime.datetime.now().strftime("%y%m%d")
+    # timestamp = datetime.datetime.now().strftime("%y%m%d")
     try:
         # Try to load model with current timestamp first
         model_version = f'models/model_{timestamp}'

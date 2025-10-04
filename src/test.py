@@ -7,6 +7,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, f1_score
 import joblib
 import json
+import argparse
 
 # rcv1 = fetch_rcv1()
 # pickle.dump(rcv1.data, open('../data/data.pickle', 'wb'))
@@ -24,9 +25,17 @@ else:
     X = rcv1.data  
     y = rcv1.target.toarray()[:, random.randint(0, 3)]
 
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--timestamp", type=str, required=True, help="Timestamp from GitHub Actions")
+args = parser.parse_args()
+
+# Access the timestamp
+current_time = args.timestamp
+
 mlflow.set_tracking_uri("./mlruns")
 dataset_name = "Test3-MLOPS-LAB-2"
-current_time = datetime.datetime.now().strftime("%y%m%d")
+# current_time = datetime.datetime.now().strftime("%y%m%d")
 experiment_name = f"{dataset_name}_{current_time}"    
 experiment_id = mlflow.create_experiment(f"{experiment_name}")
 

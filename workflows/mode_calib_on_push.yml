@@ -1,9 +1,9 @@
+name: Model Retraining on Push to Main
 
-name: Periodic Model Calibration
-
-on: 
-  schedule:
-    - cron: '0 0 * * *'  #minutes, hours, day, month, day of week 
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on pushes to the main branch
 
 jobs:
   retrain:
@@ -33,7 +33,7 @@ jobs:
 
     - name: Set File Permissions
       run: |
-        chmod +x ./src/train_model.py
+        chmod +x ./src/train_model.py #making it executable
 
     - name: Retrain Model
       run: |
@@ -63,5 +63,3 @@ jobs:
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
